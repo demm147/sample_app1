@@ -22,5 +22,18 @@ describe "Static pages" do
       visit '/static_pages/index'
       expect(page).to have_content('index111')
     end
+end
+
+describe "Contact" do
+
+    describe "contact page" do
+    it "should have the content 'Sample App'" do
+      visit '/static_pages/contact'
+      expect(page).to have_title("NEW CONTACT PAGE TASK")
+    end
+
+
+
   end
   end 
+    end 
